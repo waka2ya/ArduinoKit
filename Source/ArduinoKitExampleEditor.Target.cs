@@ -9,5 +9,6 @@ public class ArduinoKitExampleEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		ExtraModuleNames.AddRange(new string[] { "ArduinoKitExample" });
+		DefaultBuildSettings = BuildSettingsVersion.V2;
 	}
 }

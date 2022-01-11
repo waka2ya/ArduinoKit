@@ -12,7 +12,7 @@ public:
 	UArduinoKitBP(const FObjectInitializer& ObjectInitializer);
 
 	UFUNCTION(BlueprintCallable, Category = "ArduinoKit")
-		static void Open(FString port, int32 baudrate, int32 TextStackSize = 50);
+		static bool Open(FString port, int32 baudrate, int32 TextStackSize = 50);
 
 	UFUNCTION(BlueprintCallable, Category = "ArduinoKit")
 		static void Close();

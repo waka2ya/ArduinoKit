@@ -22,19 +22,14 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *
-***************************************************************************
-*/
 
-
-/* Last revision: November 22, 2017 */
-
-/* For more info and how to use this library, visit: http://www.teuniz.net/RS-232/ */
+* For more info and how to use this library, visit: http://www.teuniz.net/RS-232/ */
 
 
 #include "rs232.h"
 
 
-#if defined(__linux__) || defined(__FreeBSD__)   /* Linux & FreeBSD */
+#if PLATFORM_LINUX || PLATFORM_MAC
 
 #define RS232_PORTNR  38
 
@@ -789,7 +784,7 @@ int RS232_GetPortnr(const char *devname)
 
   char str[32];
 
-#if defined(__linux__) || defined(__FreeBSD__)   /* Linux & FreeBSD */
+#if 1//defined(__linux__) || defined(__FreeBSD__)   /* Linux & FreeBSD */
   strcpy(str, "/dev/");
 #else  /* windows */
   strcpy(str, "\\\\.\\");

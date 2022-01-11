@@ -10,15 +10,10 @@
 	
      "Modules":
      [
-        {
-            "Name": "ArduinoKit",
-            "Type": "Runtime",
-	    "WhitelistPlatforms" :
-             [
-                 "Win32",
-                 "Win64",
-		 "Linux"
-             ]
-        }
+      {
+        "Name": "ArduinoKit",
+        "Type": "Runtime",
+        "LoadingPhase": "PreLoadingScreen"
+      }
      ]
 }

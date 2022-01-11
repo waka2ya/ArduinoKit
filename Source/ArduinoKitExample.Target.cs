@@ -8,6 +8,7 @@ public class ArduinoKitExampleTarget : TargetRules
 	public ArduinoKitExampleTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		ExtraModuleNames.AddRange(new string[] { "ArduinoKitExample" }); 
+		ExtraModuleNames.AddRange(new string[] { "ArduinoKitExample" });
+		DefaultBuildSettings = BuildSettingsVersion.V2;
 	}
 }
