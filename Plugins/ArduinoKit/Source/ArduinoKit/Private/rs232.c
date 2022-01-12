@@ -784,7 +784,7 @@ int RS232_GetPortnr(const char *devname)
 
   char str[32];
 
-#if 1//defined(__linux__) || defined(__FreeBSD__)   /* Linux & FreeBSD */
+#if defined(__linux__) || defined(__FreeBSD__) || defined(__APPLE__) || defined(__MACH__)
   strcpy(str, "/dev/");
 #else  /* windows */
   strcpy(str, "\\\\.\\");
