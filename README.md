@@ -11,8 +11,8 @@ Originally written by Daniel Macedo, as found at https://bitbucket.org/danielvma
 ## Tested to compile for Linux, Mac UE4.27
 
 ## Tested Mac, Linux(Raspberry Pi 4)
-https://twitter.com/Nekomimimofmof/status/1481647623723687937
-https://twitter.com/Nekomimimofmof/status/1414197802570190849
+- https://twitter.com/Nekomimimofmof/status/1481647623723687937
+- https://twitter.com/Nekomimimofmof/status/1414197802570190849
 
 if you want to build for Raspberry Pi, see
 https://github.com/rdeioris/UnrealOnRPI4
